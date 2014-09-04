@@ -1,0 +1,17 @@
+{
+  "name": "豆瓣读书－江南大学图书馆查询插件",
+  "description": "在豆瓣读书页面，增加相关联的江南大学图书馆资源链接",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+      "16": "img/16.png",
+      "48": "img/48.png",
+      "128": "img/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://book.douban.com/*"],
+      "js": ["js/jquery.js", "js/searcher.js"]
+    }
+  ]
+}
